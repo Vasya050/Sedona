@@ -1,0 +1,171 @@
+@font-face {
+  font-family: "PT Sans";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/ptsans.woff2"), url("../fonts/ptsans.woff");
+}
+@font-face {
+  font-family: "PT Sans";
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/ptsansbold.woff2"), url("../fonts/ptsansbold.woff");
+}
+.page {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.page__body {
+  margin: 0;
+}
+
+.page-main {
+  text-transform: uppercase;
+}
+
+.site-menu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+  background-color: #81b3d2;
+}
+
+.site-menu__link {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 40px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.banner {
+  text-align: center;
+  line-height: 26px;
+}
+
+.banner__image {
+  background-color: #81b3d2;
+  background-image: url("../img/background/promo-mini.jpg");
+}
+
+.banner__welcome {
+  padding: 20px;
+}
+
+.banner__slogan {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.banner__intro {
+  color: #333333;
+}
+
+.advantages__list, .advantages__list-inner {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.advantages__description {
+  background-color: #81b3d2;
+  color: #ffffff;
+  text-align: center;
+}
+
+.advantages__title, .advantages-inner__title, .advantages-grey__title {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+.advantages__text, .advantages__number {
+  line-height: 21px;
+}
+
+.advantages__list-inner {
+  padding: 20px;
+}
+
+.advantages-inner__text {
+  line-height: 21px;
+  color: #333333;
+}
+
+.advantages-grey {
+  background-color: #eeeeee;
+}
+
+.advantages-grey__description {
+  text-align: center;
+}
+
+.advantages-grey__number, .advantages-grey__text {
+  color: #333333;
+  line-height: 21px;
+}
+
+.search__wrapper {
+  padding: 20px;
+  text-align: center;
+}
+
+.search__heading {
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.search__subheading {
+  color: #333333;
+}
+
+.button {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  text-decoration: none;
+  background-color: #81b3d2;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.page-footer {
+  padding: 20px;
+  color: #000000;
+}
+
+.social {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.copyright {
+  font-family: "PT Sans", "Arial", sans-serif;
+  text-transform: uppercase;
+}
+
+.copyright__link {
+  text-decoration: none;
+  color: #000000;
+  line-height: 26px;
+}
+/*# sourceMappingURL=style.css.map */

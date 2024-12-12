@@ -1,0 +1,22 @@
+.banner {
+  text-align: center;
+  line-height: 26px;
+}
+
+.banner__image {
+  background-color: $bg-color;
+  background-image: url("../img/background/promo-mini.jpg");
+}
+
+.banner__welcome {
+  padding: 20px;
+}
+
+.banner__slogan {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.banner__intro {
+  color: $text-color;
+}
