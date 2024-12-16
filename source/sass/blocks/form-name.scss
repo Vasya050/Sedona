@@ -1,0 +1,19 @@
+.form-name {
+  line-height: 26px;
+  color: $text-color;
+  text-transform: uppercase;
+}
+
+.form-name__label {
+  margin: 0;
+  padding: 0;
+}
+
+.form-name__input {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  background-color: $bg-input;
+  border: none;
+  color: $color-black;
+}
