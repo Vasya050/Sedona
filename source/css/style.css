@@ -275,4 +275,18 @@
   color: #000000;
   text-transform: none;
 }
+
+.modal__heading {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.modal__description {
+  line-height: 24px;
+  color: #333333;
+  text-transform: uppercase;
+}
 /*# sourceMappingURL=style.css.map */
