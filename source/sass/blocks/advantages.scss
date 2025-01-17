@@ -1,16 +1,28 @@
-.advantages__list, .advantages__list-inner {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+.advantages {
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-.advantages__description {
+.advantages__container {
   background-color: $bg-color;
   color: $main-color;
   text-align: center;
 }
 
-.advantages__title, .advantages-inner__title, .advantages-grey__title {
+.advantages__description {
+  @media (max-width: $breakpoint-small-down) {
+    max-width: 280px;
+    margin: 0 auto;
+  }
+}
+
+.advantages__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.advantages__title {
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
@@ -20,24 +32,57 @@
   line-height: 21px;
 }
 
-.advantages__list-inner {
-  padding: 20px;
+.advantages__image--city {
+  background-image: url("../../img/content/photo-city.jpg");
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  height: 256px;
 }
 
-.advantages-inner__text {
-  line-height: 21px;
-  color: $text-color;
+.advantages__image--bridge {
+  background-image: url("../../img/content/photo-bridge.jpg");
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  height: 256px;
 }
 
-.advantages-grey {
-  background-color: $bg-advantage-color;
+@media (min-width: $breakpoint-medium) {
+  .advantages__container {
+    background-color: transparent;
+  }
+
+  .advantages__intro {
+    display: flex;
+    max-width: 1040px;
+    margin: 0 auto;
+  }
+
+  .advantages__intro--revers {
+    flex-direction: row-reverse;
+  }
+
+  .advantages__description {
+    background-color: $bg-color;
+    height: 256px;
+    max-width: 256px;
+    flex-grow: 2;
+  }
+
+  .advantages__title {
+    font-size: 21px;
+  }
+
+  .advantages__image {
+    flex-grow: 1;
+  }
 }
 
-.advantages-grey__description {
-  text-align: center;
-}
+@media (min-width: $breakpoint-large) {
+  .advantages__intro {
+    max-width: 1200px;
+  }
 
-.advantages-grey__number, .advantages-grey__text {
-  color: $text-color;
-  line-height: 21px;
+  .advantages__description {
+    max-width: 400px;
+  }
 }

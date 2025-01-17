@@ -1,0 +1,7 @@
+.white-triangle {
+  @media (max-width: $breakpoint-small-down) {
+    background-color: $main-color;
+    height: 37px;
+    clip-path: polygon(50% 100%, 0 0, 100% 0);
+  }
+}

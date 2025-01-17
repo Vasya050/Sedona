@@ -1,24 +1,18 @@
 .banner {
   text-align: center;
   line-height: 26px;
-}
-
-.banner__image {
   background-color: $bg-color;
-  background-image: url("../img/background/promo-mini.jpg");
-  min-height: 160px;
+  background-image: url("../../img/background/banner-desktop.jpg");
   background-position: bottom;
+  background-repeat: no-repeat;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-.banner__welcome {
-  padding: 20px;
-}
+.banner__container {
+  min-height: 390px;
 
-.banner__slogan {
-  font-size: 18px;
-  font-weight: 700;
-}
-
-.banner__intro {
-  color: $text-color;
+  @media (min-width: $breakpoint-medium) {
+    min-height: 518px;
+  }
 }

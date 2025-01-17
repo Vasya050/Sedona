@@ -11,18 +11,30 @@
 
   <header class="page__header page-header">
     <nav class="page-header__nav">
-      <a class="page-header__logo logo">
-        <img class="logo__image" src="./img/icons/logo-mini.svg" alt="Sedona">
-      </a>
-      <button class="page-header__toggler" type="button">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
+      <div class="page-header__bar">
+        <a class="page-header__logo logo">
+          <img class="logo__image" src="./img/icons/logo-mini.svg" width="102" height="84" alt="Sedona">
+        </a>
+        <button class="page-header__toggler" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+      </div>
       <ul class="page-header__menu site-menu">
         <li class="site-menu__item">
           <a class="site-menu__link" href="./index.html">Главная</a>
         </li>
         <li class="site-menu__item site-menu__item--active">
           <a class="site-menu__link">Фото и видео</a>
+        </li>
+        <li class="site-menu__item site-menu__item--logo">
+          <a class="site-menu__link site-menu__link--logo">
+            <img src="./img/icons/logo-tablet.svg" width="102" height="84" alt="Sedona">
+          </a>
+        </li>
+        <li class="site-menu__item site-menu__item--lage-logo">
+          <a class="site-menu__link site-menu__link--large-logo">
+            <img src="./img/icons/logo-desktop.svg" width="187" height="97" alt="Sedona">
+          </a>
         </li>
         <li class="site-menu__item">
           <a class="site-menu__link" href="./form.html">Форма Отзыва</a>
@@ -195,7 +207,7 @@
     </section>
   </main>
 
-  <footer class="page__footer page-footer">
+  <footer class="page__footer page-footer container">
     <a class="page-footer__logo logo" href="#">
       <img class="logo__sign" src="./img/icons/visit-sedona.svg" width="166" height="26" alt="хэштег Седона">
     </a>
@@ -228,8 +240,8 @@
     </ul>
 
     <div class="page-footer__copyright copyright">
-      <span class="copyright__text">Разработано</span>
       <a href="#" class="copyright__link">
+        <span class="copyright__text">Разработано</span>
         <img class="copyright__image" src="./img/icons/htmlacademy.svg" width="27" height="34" alt="Логотип HTML Academy">
       </a>
     </div>

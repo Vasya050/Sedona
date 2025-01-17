@@ -1,0 +1,39 @@
+.advantages-grey {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background-color: $bg-advantage-color;
+
+  @media (max-width: $breakpoint-small-down) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.advantages-grey__description {
+  text-align: center;
+}
+
+.advantages-grey__title {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+.advantages-grey__number, .advantages-grey__text {
+  color: $text-color;
+  line-height: 21px;
+}
+
+@media (min-width: $breakpoint-medium) {
+  .advantages-grey {
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 46px;
+  }
+
+  .advantages-grey__title {
+    font-size: 21px;
+  }
+}

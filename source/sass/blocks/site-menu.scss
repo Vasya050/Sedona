@@ -4,6 +4,31 @@
   list-style: none;
   text-align: center;
   background-color: $bg-color;
+
+  @media (min-width: $breakpoint-medium) {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: $main-color;
+  }
+}
+
+@media (max-width: $breakpoint-small-down) {
+  .site-menu__item--logo {
+    display: none;
+  }
+}
+
+@media (max-width: $breakpoint-large) {
+  .site-menu__item--lage-logo {
+    display: none;
+  }
+}
+
+@media (min-width: $breakpoint-large) {
+  .site-menu__item--logo {
+    display: none;
+  }
 }
 
 .site-menu__link {
@@ -13,4 +38,18 @@
   font-weight: 700;
   text-transform: uppercase;
   line-height: 40px;
+
+  @media (min-width: $breakpoint-medium) {
+    color: $color-black;
+  }
 }
+
+.site-menu--closed {
+  display: none;
+
+  @media (min-width: $breakpoint-medium) {
+    display: flex;
+  }
+}
+
+

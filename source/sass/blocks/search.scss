@@ -1,6 +1,8 @@
 .search__wrapper {
   padding: 20px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .search__heading {
@@ -11,4 +13,14 @@
 
 .search__subheading {
   color: $text-color;
+}
+
+@media (min-width: $breakpoint-medium) {
+  .search__heading {
+    font-size: 30px;
+  }
+
+  .search__wrapper {
+    max-width: 460px;
+  }
 }
