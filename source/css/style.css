@@ -3,14 +3,14 @@
   font-weight: 400;
   font-style: normal;
   font-display: swap;
-  src: url("./fonts/ptsans.woff2"), url("../fonts/ptsans.woff");
+  src: url("../fonts/ptsans.woff2"), url("../fonts/ptsans.woff");
 }
 @font-face {
   font-family: "PT Sans";
   font-weight: 700;
   font-style: normal;
   font-display: swap;
-  src: url("./fonts/ptsansbold.woff2"), url("../fonts/ptsansbold.woff");
+  src: url("../fonts/ptsansbold.woff2"), url("../fonts/ptsansbold.woff");
 }
 *,
 *::before,
@@ -166,14 +166,14 @@ img {
 }
 
 .advantages__image--city {
-  background-image: url("./img/content/photo-city.jpg");
+  background-image: url("../img/content/photo-city.jpg");
   background-position: bottom center;
   background-repeat: no-repeat;
   height: 256px;
 }
 
 .advantages__image--bridge {
-  background-image: url("./img/content/photo-bridge.jpg");
+  background-image: url("../img/content/photo-bridge.jpg");
   background-position: bottom center;
   background-repeat: no-repeat;
   height: 256px;
@@ -238,7 +238,7 @@ img {
   text-align: center;
   line-height: 26px;
   background-color: #81b3d2;
-  background-image: url("./img/background/banner-desktop.jpg");
+  background-image: url("../img/background/banner-desktop.jpg");
   background-position: bottom;
   background-repeat: no-repeat;
   max-width: 1200px;
