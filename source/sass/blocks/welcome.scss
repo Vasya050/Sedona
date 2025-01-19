@@ -1,29 +1,47 @@
 .welcome {
   text-align: center;
+  text-transform: uppercase;
 }
-
-.welcome__container {
-  @media (max-width: $breakpoint-small-down) {
-    max-width: 280px;
-  }
-
-  @media (min-width: $breakpoint-medium) {
-    max-width: 520px;
-  }
-}
-
 
 .welcome__slogan {
   font-size: 18px;
   font-weight: 700;
   line-height: 26px;
+}
 
-  @media (min-width: $breakpoint-medium) {
-    font-size: 21px;
-  }
+.welcome__slogan--index {
+  display: block;
 }
 
 .welcome__intro {
   color: $text-color;
-  line-height: 26px;
+  line-height: 24px;
+  margin: 0 auto;
+}
+
+
+@media (max-width: $breakpoint-small-down) {
+  .welcome__container {
+    max-width: 280px;
+  }
+
+  .welcome__slogan--index {
+    width: 270px;
+  }
+}
+
+@media (min-width: $breakpoint-medium) {
+  .welcome__container {
+    max-width: 484px;
+  }
+  .welcome__intro--catalog {
+    max-width: 435px;
+  }
+  .welcome__intro--form {
+    max-width: 435px;
+  }
+
+  .welcome__slogan {
+    font-size: 21px;
+  }
 }

@@ -10,40 +10,42 @@
 <body class="page__body">
 
   <header class="page__header page-header">
-    <nav class="page-header__nav">
-      <div class="page-header__bar">
-        <a class="page-header__logo logo">
-          <img class="logo__image" src="./img/icons/logo-mini.svg" width="102" height="84" alt="Sedona">
-        </a>
-        <button class="page-header__toggler" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
-      </div>
-      <ul class="page-header__menu site-menu">
-        <li class="site-menu__item">
-          <a class="site-menu__link" href="./index.html">Главная</a>
-        </li>
-        <li class="site-menu__item site-menu__item--active">
-          <a class="site-menu__link">Фото и видео</a>
-        </li>
-        <li class="site-menu__item site-menu__item--logo">
-          <a class="site-menu__link site-menu__link--logo">
-            <img src="./img/icons/logo-tablet.svg" width="102" height="84" alt="Sedona">
+    <div class="page-header__container container">
+      <nav class="page-header__nav">
+        <div class="page-header__bar">
+          <a class="page-header__logo logo">
+            <img class="logo__image" src="./img/icons/logo-mini.svg" width="102" height="84" alt="Sedona">
           </a>
-        </li>
-        <li class="site-menu__item site-menu__item--lage-logo">
-          <a class="site-menu__link site-menu__link--large-logo">
-            <img src="./img/icons/logo-desktop.svg" width="187" height="97" alt="Sedona">
-          </a>
-        </li>
-        <li class="site-menu__item">
-          <a class="site-menu__link" href="./form.html">Форма Отзыва</a>
-        </li>
-        <li class="site-menu__item">
-          <a class="site-menu__link" href="#">HTML Academy</a>
-        </li>
-      </ul>
-    </nav>
+          <button class="page-header__toggler" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+        </div>
+        <ul class="page-header__menu site-menu">
+          <li class="site-menu__item">
+            <a class="site-menu__link" href="./index.html">Главная</a>
+          </li>
+          <li class="site-menu__item site-menu__item--active">
+            <a class="site-menu__link">Фото и видео</a>
+          </li>
+          <li class="site-menu__item site-menu__item--logo">
+            <a class="site-menu__link site-menu__link--logo">
+              <img src="./img/icons/logo-tablet.svg" width="102" height="84" alt="Sedona">
+            </a>
+          </li>
+          <li class="site-menu__item site-menu__item--lage-logo">
+            <a class="site-menu__link site-menu__link--large-logo">
+              <img src="./img/icons/logo-desktop.svg" width="187" height="97" alt="Sedona">
+            </a>
+          </li>
+          <li class="site-menu__item">
+            <a class="site-menu__link" href="./form.html">Форма Отзыва</a>
+          </li>
+          <li class="site-menu__item">
+            <a class="site-menu__link" href="#">HTML Academy</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
   <main class="page__main page-main">
@@ -51,20 +53,27 @@
 
       <section class="banner">
         <h2 class="visually-hidden">Вступительный раздел с баннером о фото и видео в Седоне</h2>
-        <div class="banner__image banner__image--catalog">
-          <img src="./img/text-sedona.svg" width="229" height="39" alt="Картинка с надписью Седона">
-          <div class="banner__triangle"></div>
+        <div class="banner__catalog container">
+          <div class="banner__image banner__image--catalog">
+            <img src="./img/text-sedona.svg" width="229" height="39" alt="Картинка с надписью Седона">
+            <div class="banner__triangle"></div>
+          </div>
         </div>
-        <b class="banner__slogan">Фото и видео</b>
-        <p class="banner__intro banner__intro--catalog">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
       </section>
 
-    <section class="articles">
+      <section class="page-main__section welcome">
+        <h2 class="visually-hidden">Вступительный раздел с фотогалереей</h2>
+        <div class="welcome__container container">
+          <b class="welcome__slogan">Фото и видео</b>
+          <p class="welcome__intro welcome__intro--catalog">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+        </div>
+      </section>
+
+    <section class="photo-gallery container">
       <h2 class="visually-hidden">Фото и видео о Седоне</h2>
+      <div class="photo-gallery__container">
 
-      <div class="articles__photo-gallery photo-gallery">
-
-        <article class="article--first article">
+        <article class="article article--first">
           <h3 class="visually-hidden">Первая статья с фото о Седоне</h3>
           <a href="" class="article__link">
             <picture class="article__photo">
@@ -160,13 +169,16 @@
           </div>
         </article>
       </div>
-      <div class="articles__video video">
+    </section>
+
+    <section class="video">
+      <div class="video__container container">
         <div class="video__content">
           <p class="video__heading">Все еще сомневаетесь?</p>
           <p class="video__subheading">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
         </div>
 
-        <picture class="video__content">
+        <picture class="video__image">
           <img class="video__player" src="./img/content/video-mobile.jpg" width="320" height="201" alt="Картинка под видео">
         </picture>
 

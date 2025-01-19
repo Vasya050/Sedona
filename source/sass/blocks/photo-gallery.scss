@@ -1,0 +1,25 @@
+.photo-gallery__container {
+  @media (max-width: $breakpoint-small-down) {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 280px;
+  }
+
+  @media (min-width: $breakpoint-medium) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: $bg-input;
+  }
+
+  @media (min-width: $breakpoint-large) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.article--first {
+  @media (min-width: $breakpoint-medium) {
+    grid-column: 1 / -1;
+  }
+}

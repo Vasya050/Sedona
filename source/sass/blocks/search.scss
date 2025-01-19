@@ -9,10 +9,12 @@
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
+  text-transform: uppercase;
 }
 
 .search__subheading {
   color: $text-color;
+  text-transform: uppercase;
 }
 
 @media (min-width: $breakpoint-medium) {

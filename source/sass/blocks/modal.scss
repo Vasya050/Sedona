@@ -1,13 +1,41 @@
+.modal__container {
+  width: 320px;
+  margin: 0 auto;
+  text-align: center;
+}
+
 .modal__heading {
-  font-weight: 700;
+  font-family: $font-page;
   font-size: 18px;
+  font-weight: 700;
   line-height: 26px;
   color: $color-black;
   text-transform: uppercase;
 }
 
 .modal__description {
+  font-family: $font-page;
+  font-size: 14px;
   line-height: 24px;
   color: $text-color;
   text-transform: uppercase;
+}
+
+@media (min-width: $breakpoint-medium) {
+  .modal__container--error {
+    width: 400px;
+  }
+
+  .modal__container--success {
+    width: 640px;
+  }
+
+  .modal__button-wrapper {
+    background-color: $bg-input;
+  }
+
+  .modal__heading {
+    font-size: 30px;
+    line-height: 40px;
+  }
 }

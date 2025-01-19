@@ -1,6 +1,17 @@
 .video__content {
+  text-align: center;
   font-family: $font-page;
   text-transform: uppercase;
+
+  @media (max-width: $breakpoint-small-down) {
+    max-width: 266px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $breakpoint-medium) {
+    max-width: 445px;
+    margin: 0 auto;
+  }
 }
 
 .video__heading {

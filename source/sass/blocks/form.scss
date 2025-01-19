@@ -1,3 +1,67 @@
 .form {
   padding: 20px;
 }
+
+.form__group {
+  margin: 0;
+}
+
+.form__additional {
+  font-family: $font-page;
+  line-height: 26px;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+@media (max-width: $breakpoint-small-down) {
+  .form__additional {
+    display: none;
+  }
+}
+
+@media (min-width: $breakpoint-medium) {
+  .form {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  .form__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .form__group--name {
+    grid-column: 2 / -1;
+    grid-row: 1 / 2;
+  }
+  .form__group--contacts {
+    grid-column: 1 / -1;
+  }
+  .form__group--impression {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+  .form__group--visited {
+    grid-column: 1 / -1;
+  }
+  .form__group--comment {
+    grid-column: 1 / -1;
+  }
+  .form__footer {
+    grid-column: 1 / -1;
+  }
+
+  .form__footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: $breakpoint-large) {
+  .form {
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+}
+

@@ -1,0 +1,40 @@
+.field-group {
+  padding: 20px 0;
+  border: none;
+}
+
+.field-group__heading {
+  font-family: $font-page;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  color: $color-black;
+  text-transform: uppercase;
+}
+
+.field-group__list {
+  padding: 0;
+  list-style: none;
+}
+
+@media (min-width: $breakpoint-medium) {
+  .field-group__list--visited {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: $breakpoint-large) {
+  .field-group__list--contacts {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .field__lead--contact {
+    display: none;
+  }
+
+  .field-group__list--visited {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

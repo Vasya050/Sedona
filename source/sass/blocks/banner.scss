@@ -3,16 +3,21 @@
   line-height: 26px;
   background-color: $bg-color;
   background-image: url("../img/background/banner-desktop.jpg");
-  background-position: bottom;
+  background-position: center bottom;
   background-repeat: no-repeat;
   max-width: 1200px;
   margin: 0 auto;
 }
 
-.banner__container {
+.banner__main {
   min-height: 390px;
 
   @media (min-width: $breakpoint-medium) {
     min-height: 518px;
   }
+}
+
+.banner__catalog,
+.banner__image--form {
+  min-height: 160px;
 }

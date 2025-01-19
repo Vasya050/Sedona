@@ -1,0 +1,17 @@
+.field {
+  font-family: $font-page;
+  color: $text-color;
+  line-height: 26px;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.field__input {
+  font-family: $font-page;
+  background-color: $bg-input;
+  color: $color-black;
+  line-height: 26px;
+  font-size: 18px;
+  font-weight: 700;
+}
